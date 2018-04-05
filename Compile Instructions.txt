@@ -1,0 +1,10 @@
+Open CMD to this folder
+
+set PATH=c:\GTK\bin;%PATH%
+set PATH=c:\MinGW\bin;%PATH%
+
+C:\MinGW\msys\1.0\bin\bash.exe -c "echo gcc -Wall -g gui.c -o gui `pkg-config --cflags gtk+-2.0` `pkg-config --libs gtk+-2.0` > compile.bat"
+
+compile.bat
+
+helloworld.exe
